@@ -5,5 +5,8 @@ h1 {
 }
 
 .card-course-item{
-  margin-top: 16px;
+  width: 100%;   /* set card width */
+  height: 100px;  
+  display: flex;
+  flex-direction: column;
 }
