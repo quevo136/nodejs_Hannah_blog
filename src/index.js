@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
@@ -5,7 +6,7 @@ const { engine } = require('express-handlebars');
 const methodOverride = require('method-override')
 
 const app = express();
-//const port = 3000;
+const port = process.env.PORT;
 const route = require('./routes');
 const db = require('./config/db');
 
@@ -43,6 +44,6 @@ console.log('PATH: ', path.join(__dirname, 'resources/views'));
 
 route(app);
 
-// app.listen(port, () =>
-//   console.log(`App listening on port http://localhost:${port}`),
-// );
+app.listen(port, () =>
+  console.log(`App listening on ${port}`),
+);
