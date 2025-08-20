@@ -27,6 +27,7 @@
   "homepage": "https://github.com/quevo136/nodejs_Hannah_blog#readme",
   "description": "",
   "dependencies": {
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.1",
     "method-override": "^3.0.0",

@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "68a42b541ccbb0d08cfdf9c9"
+  },
+  "name": "AFL integrity unit investigates Crows player over alleged homophobic slur",
+  "description": "AFL Adelaide Crows player Izak Rankine could be banned for the remainder of the AFL season as the integrity unit investigates allegations of a homophobic slur.",
+  "image": "https://img.youtube.com/vi/js6VIzsYjmc/0.jpg",
+  "videoId": "js6VIzsYjmc",
+  "level": "Sport",
+  "createdAt": {
+    "$date": "2025-08-19T07:44:20.405Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T15:01:25.512Z"
+  },
+  "slug": "afl-integrity-unit-investigates-crows-player-over-alleged-homophobic-slur",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a48ce7fddddbd29e558951"
+  },
+  "name": "Sydney woman loses life savings to text scam",
+  "description": " A legal expert has warned it's no longer possible for bank customers to protect themselves from scams after a Sydney woman lost her life savings to a sophisticated text message fraud.",
+  "image": "https://img.youtube.com/vi/Jc1mLXE9quc/sddefault.jpg",
+  "videoId": "Jc1mLXE9quc",
+  "level": "Social",
+  "createdAt": {
+    "$date": "2025-08-19T14:40:39.295Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T14:40:39.295Z"
+  },
+  "slug": "sydney-woman-loses-life-savings-to-text-scam-57EeSfe5d",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a48d2efddddbd29e558958"
+  },
+  "name": "Husband",
+  "description": "A blue Mustang, which was used as a getaway car in a Sydney fatal shooting, has been found torched. With police saying the victim of the shooting, a husband and a young girl was not the intended target.",
+  "image": "https://img.youtube.com/vi/pj1inqYycHE/sddefault.jpg",
+  "videoId": "pj1inqYycHE",
+  "level": "Social",
+  "createdAt": {
+    "$date": "2025-08-19T14:41:50.915Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T15:02:32.943Z"
+  },
+  "slug": "husband",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a48fbdfddddbd29e55897d"
+  },
+  "name": "Growing concerns for Rottnest Island's environment",
+  "description": "There are growing concerns that developments on Rottnest Islands are coming at the expense of the environment.",
+  "image": "https://img.youtube.com/vi/qj4k1vzST7s/sddefault.jpg",
+  "videoId": "qj4k1vzST7s",
+  "level": "Environment ",
+  "createdAt": {
+    "$date": "2025-08-19T14:52:45.178Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T14:52:45.178Z"
+  },
+  "slug": "growing-concerns-for-rottnest-island-s-environment",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a4918dfddddbd29e558993"
+  },
+  "name": "Zelensky to meet with Trump; Qantas hit with major fine over sacking staff",
+  "description": " Volodymyr Zelensky will join Donald Trump for peace talks, just days after the American leader failed to secure a ceasefire agreement with Vladimir Putin.",
+  "image": "https://img.youtube.com/vi/Q0lcsTlhINQ/sddefault.jpg",
+  "videoId": "Q0lcsTlhINQ",
+  "level": "Politic",
+  "createdAt": {
+    "$date": "2025-08-19T15:00:29.005Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-19T15:01:20.265Z"
+  },
+  "slug": "zelensky-to-meet-with-trump-qantas-hit-with-major-fine-over-sacking-staff",
+  "__v": 0
+}]
