@@ -14,6 +14,10 @@ class CourseController {
     //res.send('Course details');
   }
 
+  // auth(req, res, next) {    
+  //   res.render('/google');
+  // }
+
   create(req, res, next) {    
     res.render('courses/create');
   }
@@ -37,6 +41,8 @@ class CourseController {
       }))
       .catch(next);
   }
+
+  
 
   update(req, res, next) {
     Course.updateOne({_id: req.params.id}, req.body)

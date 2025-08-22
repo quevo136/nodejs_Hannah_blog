@@ -1,6 +1,13 @@
 <nav class="navbar navbar-expand-lg bg-primary">
   <div class="container-fluid">
+    {{#if user}}
+    <a class="navbar-brand" href="/">
+      <img src="{{user.photo}}" alt="Profile" style="width:32px; height:32px; border-radius:50%; margin-right:8px;">
+      {{user.username}}
+    </a>
+    {{else}}
     <a class="navbar-brand" href="/">Online news</a>
+    {{/if}}
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,10 +22,22 @@
             <li><a class="dropdown-item" href="/courses/create">Create the News</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="/me/stored/courses">Interested News</a></li>
+             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/youtube">Interested YouTube Video</a></li>
             
           </ul>
         </li>        
-      </ul>      
+      </ul> 
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="btn btn-light" href="/api/auth/google">
+            <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo" style="width:20px; margin-right:8px;">
+            Login with Google
+          </a>
+        </li>
+      </ul>
+       
     </div>
   </div>
 </nav>

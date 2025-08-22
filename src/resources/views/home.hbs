@@ -11,11 +11,53 @@
                         <h5 class="card-title">{{this.name}}</h5>
                     </a>
                     <p class="card-text">{{this.description}}</p>
-                    <a href="/courses/{{this.slug}}" class="btn btn-primary">Interested</a>
+                    <button class="btn btn-primary like-btn" data-videoid="{{this.youtubeId}}">Like</button>
+                    <button class="btn btn-secondary dislike-btn" data-videoid="{{this.youtubeId}}">Dislike</button>
                 </div>
             </div>
         </div>
         {{/each}}
-
     </div>
 </div>
+
+
+<script>
+document.querySelectorAll('.like-btn').forEach(btn => {
+    btn.addEventListener('click', async function() {
+        const videoId = this.getAttribute('data-videoid');
+        const res = await fetch('/api/like', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ videoId })
+        });
+        alert('Liked on YouTube!');
+    });
+});
+
+document.querySelectorAll('.dislike-btn').forEach(btn => {
+    btn.addEventListener('click', async function() {
+        const videoId = this.getAttribute('data-videoid');
+        const res = await fetch('/api/dislike', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ videoId })
+        });
+        alert('Disliked on YouTube!');
+    });
+});
+
+document.querySelectorAll('.comment-btn').forEach(btn => {
+    btn.addEventListener('click', async function() {
+        const videoId = this.getAttribute('data-videoid');
+        const text = prompt('Enter your comment:');
+        if (text) {
+            const res = await fetch('/api/comment', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ videoId, text })
+            });
+            alert('Comment posted on YouTube!');
+        }
+    });
+});
+</script>

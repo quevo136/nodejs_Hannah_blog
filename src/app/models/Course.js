@@ -18,4 +18,4 @@ const Course = new Schema({
   }
 );
 
-  module.exports = mongoose.model('Course', Course);
+module.exports = mongoose.model('Course', Course);
